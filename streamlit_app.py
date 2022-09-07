@@ -1,6 +1,5 @@
 import streamlit
 import pandas
-
 import requests
 #import snowflake.connector
 
@@ -12,12 +11,12 @@ import requests
 
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-
+streamlit.text(fruityvice_response)
 
 
 #fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 
-streamlit.dataframe(fruityvice_normalized)
+#streamlit.dataframe(fruityvice_normalized)
 
 
 streamlit.title("Akshay Kachar")
